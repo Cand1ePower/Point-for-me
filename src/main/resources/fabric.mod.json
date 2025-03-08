@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "point-for-me",
+	"version": "${version}",
+	"name": "Point For Me",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": [
+		"Candle_Power_"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/point-for-me/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"cdpw.pfm.PointForMe"
+		],
+		"fabric-datagen": [
+			"cdpw.pfm.PointForMeDataGenerator"
+		],
+		"client":[
+			"cdpw.pfm.PointForMeClient"
+		]
+	},
+	"mixins": [
+		"point-for-me.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.10",
+		"minecraft": "~1.21",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
